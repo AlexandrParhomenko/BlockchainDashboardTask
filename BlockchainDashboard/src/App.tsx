@@ -8,7 +8,7 @@ import data from '../src/data/data.min.json'
 import {CartesianGrid, Line, LineChart, Tooltip, XAxis} from "recharts";
 
 function App() {
-    const [filter, setFilter] = useState<string>()
+    const [filter, setFilter] = useState<string>("all_time")
     const [activeBot, setActiveBot] = useState<number>()
     const [chartData, setChartData] = useState<any>([{name: '22.04', uv: getRandomInt(10000)},
         {name: '23.04', uv: getRandomInt(10000)},
@@ -93,7 +93,7 @@ function App() {
                     alignItems: "center",
                     justifyContent: "center"
                 }}>
-                    {data.bots.map((el, idx) => <div onClick={() => {
+                    {data.bots.map((el: any, idx) => <div onClick={() => {
                         setActiveBot(idx)
                         setChartPercent(getRandomInt(100))
                         setChartData([{name: '22.04', uv: getRandomInt(10000)},
