@@ -106,7 +106,7 @@ function App() {
                                                      className={idx === activeBot ? "botBoxWrapper botActive" : "botBoxWrapper"}
                                                      key={idx}>
                         <img style={{objectFit: "contain", width: "10vw", height: "10vw"}}
-                             src={`../src/assets/p${idx + 1}.png`} alt={`bot_img${idx + 1}`}/>
+                             src={`./p${idx + 1}.png`} alt={`bot_img${idx + 1}`}/>
                         <span style={{color: "white", fontWeight: "bold"}}>{el.name}</span>
                         <span style={{
                             color: parseInt(el[filter]) > 0 ? "#5ea753" : "#de3f76",
