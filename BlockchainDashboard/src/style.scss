@@ -56,25 +56,27 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .titleFont {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.5px;
 }
 
 .mainFont {
   color: #4a5d73;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 0.5px;
 }
 
 .dataFont {
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 0.5px;
 }
 
